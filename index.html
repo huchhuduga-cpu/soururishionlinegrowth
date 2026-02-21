@@ -723,28 +723,118 @@
         }
 
         /* ─── RESPONSIVE ─── */
+        /* ── TABLET ── */
         @media (max-width: 900px) {
+            nav { padding: 0.9rem 5%; }
+            .nav-links { display: none; }
             .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
             .hero-image-wrap { display: none; }
             .hero-content { text-align: center; }
             .hero-tags { justify-content: center; }
-            .hero-actions { justify-content: center; }
+            .hero-actions { justify-content: center; flex-wrap: wrap; gap: 1rem; }
             .services-header { grid-template-columns: 1fr; gap: 1.5rem; }
             .services-grid { grid-template-columns: 1fr 1fr; }
-            #why { grid-template-columns: 1fr; gap: 3.5rem; }
-            #why-digital > div { grid-template-columns: 1fr !important; }
-            #why-digital .insight-grid { grid-template-columns: 1fr !important; }
+            #why { grid-template-columns: 1fr; gap: 3rem; }
             .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
             .form-row { grid-template-columns: 1fr; }
-            .nav-links { display: none; }
-            .stats-strip { grid-template-columns: 1fr; }
-            .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
+            .stats-strip { grid-template-columns: 1fr 1fr; }
+            .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); padding: 1.5rem; }
             .stat-item:last-child { border-bottom: none; }
+            /* Why Digital tablet */
+            #why-digital { padding: 70px 5% !important; }
+            #why-digital > div { grid-template-columns: 1fr !important; }
+            #why-digital [style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr 1fr !important; }
+            #why-digital [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+            /* Testimonials */
+            #testimonials [style*="grid-template-columns:repeat(2"] { grid-template-columns: 1fr !important; }
         }
+
+        /* ── MOBILE ── */
         @media (max-width: 600px) {
-            .services-grid { grid-template-columns: 1fr; }
-            .contact-form { padding: 1.8rem; }
-            .hero-actions { flex-direction: column; align-items: center; }
+            /* Nav */
+            nav { padding: 0.8rem 4%; }
+            .logo-text { font-size: 1rem; }
+            .lang-toggle { font-size: 0.75rem; padding: 0.35rem 0.8rem; }
+
+            /* Hero */
+            section#home { padding: 100px 5% 60px !important; }
+            .section-title { font-size: clamp(1.6rem, 6vw, 2.4rem) !important; }
+            .hero-content h1 { font-size: clamp(1.8rem, 7vw, 2.8rem); }
+            .hero-actions { flex-direction: column; align-items: stretch; width: 100%; }
+            .hero-actions a, .hero-actions button { width: 100%; text-align: center; justify-content: center; }
+            .hero-tags { gap: 0.4rem; }
+            .hero-tag { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
+            .hero-badge { display: none; }
+
+            /* Stats */
+            .stats-strip { grid-template-columns: 1fr; padding: 2rem 5% !important; gap: 0; }
+            .stat-item { padding: 1.2rem 1rem; }
+            .stat-num { font-size: 2rem; }
+
+            /* Services */
+            section#services { padding: 70px 4% !important; }
+            .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .service-card { padding: 1.5rem; }
+
+            /* Why Digital */
+            #why-digital { padding: 60px 4% !important; }
+            #why-digital h2 { font-size: clamp(1.5rem, 6vw, 2.2rem) !important; }
+            #why-digital [style*="grid-template-columns:repeat(3"] { 
+                display: flex !important; flex-direction: column !important; gap: 1rem !important; 
+            }
+            #why-digital [style*="grid-template-columns:1fr 1fr"],
+            #why-digital [style*="grid-template-columns:repeat(2"] { 
+                display: flex !important; flex-direction: column !important; gap: 1rem !important; 
+            }
+            #why-digital [style*="padding:3.5rem 4rem"] { padding: 1.8rem 1.5rem !important; }
+            #why-digital [style*="padding:2.5rem"] { padding: 1.5rem !important; }
+            #why-digital h3 { font-size: 1.3rem !important; }
+
+            /* Why Us */
+            #why { padding: 60px 4% !important; }
+            .why-grid { grid-template-columns: 1fr !important; }
+
+            /* Clients */
+            #clients { padding: 60px 4% !important; }
+            .clients-grid { flex-wrap: wrap; gap: 1rem; }
+            .client-card { min-width: 140px; padding: 1.2rem; }
+
+            /* Testimonials */
+            #testimonials { padding: 60px 4% !important; }
+            #testimonials [style*="grid-template-columns:repeat(2"] { 
+                display: flex !important; flex-direction: column !important; 
+            }
+            #testimonials > div > div { padding: 1.5rem !important; }
+
+            /* Contact */
+            #contact { padding: 60px 4% !important; }
+            .contact-form { padding: 1.5rem !important; }
+            .contact-info { padding: 1.5rem !important; }
+            .contact-detail { gap: 0.8rem; }
+
+            /* Form */
+            .form-row { grid-template-columns: 1fr; }
+            .form-group input, .form-group select, .form-group textarea { 
+                font-size: 16px !important; /* prevents iOS zoom */
+            }
+            .form-submit { width: 100%; font-size: 0.9rem; padding: 1rem; }
+
+            /* Footer */
+            footer { padding: 2rem 4% !important; font-size: 0.78rem; }
+            footer p { text-align: center; }
+
+            /* Section labels */
+            .section-label { font-size: 0.72rem; }
+
+            /* General spacing */
+            section { padding-left: 4% !important; padding-right: 4% !important; }
+        }
+
+        /* ── SMALL MOBILE ── */
+        @media (max-width: 380px) {
+            .hero-content h1 { font-size: 1.6rem; }
+            .section-title { font-size: 1.4rem !important; }
+            nav { padding: 0.7rem 3%; }
         }
     </style>
 </head>
@@ -1154,7 +1244,7 @@
             </div>
             <div class="contact-detail">
                 <div class="icon">✉️</div>
-                <a href="mailto:raviyindaa@gmail.com" style="color:var(--slate);text-decoration:none;font-weight:700;">raviyindaa@gmail.com</a>
+                <a href="/cdn-cgi/l/email-protection#cbb9aabda2b2a2a5afaaaa8baca6aaa2a7e5a8a4a6" style="color:var(--slate);text-decoration:none;font-weight:700;"><span class="__cf_email__" data-cfemail="631102150a1a0a0d07020223040e020a0f4d000c0e">[email&#160;protected]</span></a>
             </div>
             <div class="contact-detail">
                 <div class="icon">📍</div>
@@ -1221,12 +1311,12 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2025 Soururishi Online Growth · Raichur, Karnataka · <a href="https://wa.me/919900454100">+91 99004 54100</a> · <a href="mailto:raviyindaa@gmail.com">raviyindaa@gmail.com</a></p>
+    <p>© 2025 Soururishi Online Growth · Raichur, Karnataka · <a href="https://wa.me/919900454100">+91 99004 54100</a> · <a href="/cdn-cgi/l/email-protection#611300170818080f05000021060c00080d4f020e0c"><span class="__cf_email__" data-cfemail="4f3d2e39263626212b2e2e0f28222e2623612c2022">[email&#160;protected]</span></a></p>
 </footer>
 
 <a href="https://wa.me/919900454100" class="wa-float" title="Chat on WhatsApp">💬</a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     let toggleLanguage;
     document.addEventListener("DOMContentLoaded", function() {
 
@@ -1522,12 +1612,4 @@
     "lType": "ಸಂಸ್ಥೆ ವಿಧ",
     "lBudget": "ಮಾಸಿಕ ಬಜೆಟ್ (₹)",
     "lMsg": "ನಿಮ್ಮ ಸಮಸ್ಯೆ ಹೇಳಿ",
-    "formSubmit": "ಉಚಿತ ಆಡಿಟ್ ವಿನಂತಿ ಕಳುಹಿಸಿ →",
-    "formNote": "ನಾವು 24 ಗಂಟೆಗಳಲ್ಲಿ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೇವೆ.",
-    "successTitle": "ವಿನಂತಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ!",
-    "successDesc": "ನಮ್ಮ ತಂಡ 24 ಗಂಟೆಗಳಲ್ಲಿ ಕರೆ ಮಾಡುತ್ತದೆ."
-  }
-}
-</script>
-</body>
-</html>
+    "formSubmit": "ಉಚಿತ ಆಡಿಟ್ ವಿನಂತಿ ಕಳ
