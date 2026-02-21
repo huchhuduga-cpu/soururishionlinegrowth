@@ -1313,112 +1313,6 @@
 <footer>
     <p>© 2025 Soururishi Online Growth · Raichur, Karnataka · <a href="https://wa.me/919900454100">+91 99004 54100</a> · <a href="/cdn-cgi/l/email-protection#611300170818080f05000021060c00080d4f020e0c"><span class="__cf_email__" data-cfemail="4f3d2e39263626212b2e2e0f28222e2623612c2022">[email&#160;protected]</span></a></p>
 </footer>
-
-<a href="https://wa.me/919900454100" class="wa-float" title="Chat on WhatsApp">💬</a>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    let toggleLanguage;
-    document.addEventListener("DOMContentLoaded", function() {
-
-    /* Scroll reveal */
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(r => observer.observe(r));
-
-    /* Form */
-    document.getElementById('inquiry-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('inp-name').value;
-        const phone = document.getElementById('inp-phone').value;
-        const school = document.getElementById('inp-school').value;
-        const msg = document.getElementById('inp-msg').value;
-        const waMsg = encodeURIComponent(`Hi! I'm ${name} from ${school}.\nPhone: ${phone}\n\n${msg}`);
-        window.open(`https://wa.me/919900454100?text=${waMsg}`, '_blank');
-        document.getElementById('inquiry-form').style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-    });
-
-    /* Bilingual */
-    let lang = 'en';
-    // Translations loaded from JSON data
-    const t = JSON.parse(document.getElementById('translations-data').textContent);
-
-    
-    function setText(id, val) { const el=document.getElementById(id); if(el) el.innerHTML=val; }
-
-    toggleLanguage = function() {
-        lang = lang==='en' ? 'kn' : 'en';
-        const d = t[lang];
-        setText('lang-btn', d.langBtn);
-        setText('nav-services', d.navServices); setText('nav-why', d.navWhy);
-        setText('nav-clients', d.navClients); setText('nav-testimonials', d.navTestimonials); setText('nav-contact', d.navContact);
-        setText('hero-title', d.heroTitle); setText('hero-desc', d.heroDesc);
-        setText('cta-main-text', d.ctaMain); setText('cta-secondary', d.ctaSecondary);
-        setText('stat-1', d.stat1); setText('stat-2', d.stat2); setText('stat-3', d.stat3);
-        setText('svc-label', d.svcLabel); setText('svc-title', d.svcTitle); setText('svc-intro', d.svcIntro);
-        setText('s1-title', d.s1t); setText('s1-desc', d.s1d); setText('s2-title', d.s2t); setText('s2-desc', d.s2d);
-        setText('s3-title', d.s3t); setText('s3-desc', d.s3d); setText('s4-title', d.s4t); setText('s4-desc', d.s4d);
-        setText('s5-title', d.s5t); setText('s5-desc', d.s5d); setText('s6-title', d.s6t); setText('s6-desc', d.s6d);
-        setText('why-label', d.whyLabel); setText('why-title', d.whyTitle); setText('why-desc', d.whyDesc);
-        setText('cta-why-text', d.ctaWhy);
-        setText('wi1-title', d.wi1t); setText('wi1-desc', d.wi1d); setText('wi2-title', d.wi2t); setText('wi2-desc', d.wi2d);
-        setText('wi3-title', d.wi3t); setText('wi3-desc', d.wi3d); setText('wi4-title', d.wi4t); setText('wi4-desc', d.wi4d);
-        setText('clients-label', d.clientsLabel); setText('clients-title', d.clientsTitle); setText('clients-desc', d.clientsDesc);
-        setText('contact-label', d.contactLabel); setText('contact-title', d.contactTitle); setText('contact-desc', d.contactDesc);
-        setText('form-title', d.formTitle);
-        setText('label-name', d.lName); setText('label-phone', d.lPhone); setText('label-school', d.lSchool);
-        setText('label-type', d.lType); setText('label-budget', d.lBudget); setText('label-msg', d.lMsg);
-        setText('form-submit', d.formSubmit); setText('form-note', d.formNote);
-        setText('success-title', d.successTitle); setText('success-desc', d.successDesc);
-        if (d.testLabel) {
-            setText('test-label', d.testLabel);
-            setText('test-title', d.testTitle);
-            setText('test-1-quote', d.test1Quote);
-            setText('test-1-name', d.test1Name);
-            setText('test-1-inst', d.test1Inst);
-            setText('test-2-quote', d.test2Quote);
-            setText('test-2-name', d.test2Name);
-            setText('test-2-inst', d.test2Inst);
-        }
-        if (d.whyDigitalLabel) {
-            setText('why-digital-label', d.whyDigitalLabel);
-            setText('why-digital-title', d.whyDigitalTitle);
-            setText('why-digital-desc', d.whyDigitalDesc);
-            setText('why-banner-title', d.whyBannerTitle);
-            setText('why-banner-desc', d.whyBannerDesc);
-            setText('why-trad-label', d.whyTradLabel);
-            setText('why-trad-text', d.whyTradText);
-            setText('why-dig-label', d.whyDigLabel);
-            setText('why-dig-text', d.whyDigText);
-            setText('why-card1-title', d.whyCard1Title);
-            setText('why-card1-desc', d.whyCard1Desc);
-            setText('why-card2-title', d.whyCard2Title);
-            setText('why-card2-desc', d.whyCard2Desc);
-            setText('why-card3-title', d.whyCard3Title);
-            setText('why-card3-desc', d.whyCard3Desc);
-            setText('why-amp-label', d.whyAmpLabel);
-            setText('why-amp-title', d.whyAmpTitle);
-            setText('why-amp-desc', d.whyAmpDesc);
-            setText('why-amp1-title', d.whyAmp1Title);
-            setText('why-amp1-desc', d.whyAmp1Desc);
-            setText('why-amp2-title', d.whyAmp2Title);
-            setText('why-amp2-desc', d.whyAmp2Desc);
-            setText('why-amp3-title', d.whyAmp3Title);
-            setText('why-amp3-desc', d.whyAmp3Desc);
-            setText('why-vtv-title', d.whyVTVTitle);
-            setText('why-vtv-desc', d.whyVTVDesc);
-            setText('why-ret', d.whyRet);
-            setText('why-ref', d.whyRef);
-            setText('why-auth', d.whyAuth);
-            setText('why-cycle-label', d.whyCycleLabel);
-            setText('why-tagline', d.whyTagline);
-        }
-    }
-
-    });
-</script>
-
 <script type="application/json" id="translations-data">
 {
   "en": {
@@ -1437,46 +1331,46 @@
     "stat3": "Digital Visibility Growth",
     "svcLabel": "What We Do",
     "svcTitle": "Every Service Built for <span class='grad-text'>Education Growth</span>",
-    "svcIntro": "We understand the unique challenges schools face during admission season. Our strategies are tailored specifically for the education sector — no generic agency playbooks, just what works for institutions like yours.",
+    "svcIntro": "We understand the unique challenges schools face during admission season. Our strategies are tailored specifically for the education sector.",
     "s1t": "Google & Meta Ads",
-    "s1d": "Hyper-targeted campaigns that reach parents exactly when they're searching for schools. We manage budget, creative, and conversion — so you only pay for real leads.",
+    "s1d": "Hyper-targeted campaigns that reach parents exactly when they're searching for schools.",
     "s2t": "SEO & Local Search",
-    "s2d": "Rank at the top when parents search \"best school near me.\" We optimize your Google Business profile, website, and local listings for maximum visibility.",
+    "s2d": "Rank at the top when parents search best school near me.",
     "s3t": "Social Media Management",
-    "s3d": "Build trust and community through compelling content on Instagram, Facebook, and YouTube — showcasing your school's culture, achievements, and events.",
+    "s3d": "Build trust and community through compelling content on Instagram, Facebook, and YouTube.",
     "s4t": "Website Design & Landing Pages",
-    "s4d": "Beautiful, fast-loading websites and admission landing pages that convert visitors into applicants. Mobile-first design built for the Indian parent audience.",
+    "s4d": "Beautiful, fast-loading websites and admission landing pages that convert visitors into applicants.",
     "s5t": "Reputation Management",
-    "s5d": "Manage and amplify your institution's online reputation. We help you earn more 5-star reviews and strategically respond to feedback across all platforms.",
+    "s5d": "Manage and amplify your institution's online reputation across all platforms.",
     "s6t": "Admissions Analytics",
-    "s6d": "Monthly reports that show you exactly where inquiries come from, what converts, and how to optimize — giving school management clear, data-driven decisions.",
+    "s6d": "Monthly reports showing exactly where inquiries come from and how to optimize.",
     "whyLabel": "Why Soururishi",
     "whyTitle": "We Speak the <span class='grad-text'>Language of Education</span>",
-    "whyDesc": "Most agencies treat schools like any other client. We bring 20 years of traditional media — print, TV, and radio — combined with 2 years of hands-on digital experience specifically in the education sector.",
+    "whyDesc": "Most agencies treat schools like any other client. We bring 20 years of traditional media combined with 2 years of hands-on digital experience in education.",
     "ctaWhy": "WhatsApp Us Now",
     "wi1t": "Education-Only Focus",
-    "wi1d": "We work exclusively with schools and colleges. Every strategy is refined from real admission campaigns — not borrowed from e-commerce or retail.",
+    "wi1d": "We work exclusively with schools and colleges. Every strategy is refined from real admission campaigns.",
     "wi2t": "Kannada-First Communication",
-    "wi2d": "We create content in Kannada, English, and regional dialects — so you reach parents in the language they trust most.",
+    "wi2d": "We create content in Kannada and regional dialects so you reach parents in the language they trust most.",
     "wi3t": "Transparent Reporting",
-    "wi3d": "You'll know exactly where every rupee goes and what results it produced. No jargon, no hidden metrics — just honest accountability.",
+    "wi3d": "You know exactly where every rupee goes and what results it produced. No jargon, no hidden metrics.",
     "wi4t": "Season-Ready Strategy",
-    "wi4d": "Admission season is short and intense. We start planning 3 months ahead so your campaigns launch at peak impact — never scrambling last-minute.",
+    "wi4d": "Admission season is short and intense. We start planning 3 months ahead so campaigns launch at peak impact.",
     "whyDigitalLabel": "Why Go Digital",
     "whyDigitalTitle": "Parents Decide <span class='grad-text'>Before They Enter Your Gate</span>",
-    "whyDigitalDesc": "In 2026, a parent's journey doesn't begin at your reception desk or security gate. It begins on their <strong>smartphone</strong> — at home, at night, in silence.",
+    "whyDigitalDesc": "In 2026, a parent's journey doesn't begin at your reception desk. It begins on their <strong>smartphone</strong> at home, at night, in silence.",
     "whyBannerTitle": "Your banners are up.<br>But are parents looking up?",
-    "whyBannerDesc": "Parents spend 2–3 hours daily on their phones. We don't wait for parents to find you — we enter their daily feed <strong>through valuable content, without disturbing their routine.</strong>",
+    "whyBannerDesc": "Parents spend 2 to 3 hours daily on their phones. We don't wait for parents to find you. We enter their daily feed <strong>through valuable content, without disturbing their routine.</strong>",
     "whyTradLabel": "Traditional Banner",
     "whyTradText": "People walk past looking at phones",
     "whyDigLabel": "Digital Content",
     "whyDigText": "Appears on the phone they're already watching",
     "whyCard1Title": "Your Social Media is Your<br>24/7 Digital Receptionist",
-    "whyCard1Desc": "If your page is inactive or irregular, you are <strong>'closed'</strong> in the eyes of the digital parent — even if your school is open every day.",
+    "whyCard1Desc": "If your page is inactive or irregular, you are <strong>closed</strong> in the eyes of the digital parent even if your school is open every day.",
     "whyCard2Title": "Transparency is the<br>New Marketing",
-    "whyCard2Desc": "Parents want <strong>Proof of Care.</strong> Consistent daily content reduces parent anxiety and builds deep trust — before the first visit.",
+    "whyCard2Desc": "Parents want <strong>Proof of Care.</strong> Consistent daily content reduces parent anxiety and builds deep trust before the first visit.",
     "whyCard3Title": "Reach the Right Parent<br>at the Right Time",
-    "whyCard3Desc": "<strong>Geo-Fencing</strong> ensures your content reaches only parents within 15km of your school — posted at drop-off and evening family hours.",
+    "whyCard3Desc": "<strong>Geo-Fencing</strong> ensures your content reaches only parents within 15km of your school.",
     "whyAmpLabel": "Our Approach",
     "whyAmpTitle": "The Amplifier Model",
     "whyAmpDesc": "You Create the Value. We Provide the Volume.",
@@ -1486,19 +1380,19 @@
     "whyAmp2Desc": "Smart content planning, Kannada-first storytelling and emotional connection.",
     "whyAmp3Title": "World Class Content",
     "whyAmp3Desc": "Your daily school activities look professional, shareable, and trust-building across all platforms.",
-    "whyVTVTitle": "We Don't Sell Admissions.<br><span class='grad-text'>We Build an Environment<br>Where They're Inevitable.</span>",
-    "whyVTVDesc": "When parents see your school's daily life consistently — they feel trust, not anxiety. Your institution becomes the <strong>First Choice</strong> in the community.",
-    "whyRet": "Retention — Current parents feel proud and share your content",
-    "whyRef": "Referrals — WhatsApp groups spread your school's story naturally",
-    "whyAuth": "Authority — Your institution becomes the first choice in your area",
+    "whyVTVTitle": "We Don't Sell Admissions.<br><span class='grad-text'>We Build an Environment Where They're Inevitable.</span>",
+    "whyVTVDesc": "When parents see your school's daily life consistently they feel trust, not anxiety. Your institution becomes the <strong>First Choice</strong> in the community.",
+    "whyRet": "Retention - Current parents feel proud and share your content",
+    "whyRef": "Referrals - WhatsApp groups spread your school's story naturally",
+    "whyAuth": "Authority - Your institution becomes the first choice in your area",
     "whyCycleLabel": "The Growth Cycle",
     "whyTagline": "Education is yours. Reaching them is our responsibility.",
     "testLabel": "What Our Clients Say",
     "testTitle": "Institutions That <span class='grad-text'>Grew With Us</span>",
-    "test1Quote": "Since working with Soururishi Online Growth, our school's visibility in the community has completely transformed. Parents now come to us already knowing who we are and trusting us — before they've even visited the school.",
+    "test1Quote": "Since working with Soururishi Online Growth, our school's visibility in the community has completely transformed. Parents now come to us already knowing who we are and trusting us.",
     "test1Name": "School Principal",
     "test1Inst": "Cambridge School, Lingasugur",
-    "test2Quote": "Soururishi understands the education sector deeply. Their Kannada-first content strategy helped us connect emotionally with local parents in a way no other agency could. Our social media engagement grew significantly within months.",
+    "test2Quote": "Soururishi understands the education sector deeply. Their Kannada-first content strategy helped us connect emotionally with local parents. Our social media engagement grew significantly within months.",
     "test2Name": "College Management",
     "test2Inst": "Sir M.V PU College, Lingasugur",
     "clientsLabel": "Our Clients",
@@ -1506,28 +1400,28 @@
     "clientsDesc": "Visit their pages and see the work in action.",
     "contactLabel": "Get In Touch",
     "contactTitle": "Let's Grow Your <span class='grad-text'>Admissions Together</span>",
-    "contactDesc": "Share your institution's details and we'll prepare a free digital audit — showing you exactly where you stand and what's possible.",
+    "contactDesc": "Share your institution's details and we'll prepare a free digital audit.",
     "formTitle": "Request a Free Audit",
     "lName": "Your Name",
     "lPhone": "Phone Number",
     "lSchool": "School / Institution Name",
     "lType": "Institution Type",
-    "lBudget": "Monthly Budget (₹)",
+    "lBudget": "Monthly Budget (Rs)",
     "lMsg": "Tell Us Your Challenge",
-    "formSubmit": "Send My Free Audit Request →",
+    "formSubmit": "Send My Free Audit Request",
     "formNote": "We respond within 24 hours. No spam, ever.",
     "successTitle": "Request Received!",
-    "successDesc": "Our team will call you within 24 hours. Feel free to WhatsApp us directly."
+    "successDesc": "Our team will call you within 24 hours."
   },
   "kn": {
     "langBtn": "English",
     "navServices": "ಸೇವೆಗಳು",
     "navWhy": "ಏಕೆ ನಾವು",
-    "navClients": "ಕ್ಲೈಂಟ್‌ಗಳು",
+    "navClients": "ಕ್ಲೈಂಟ್ಗಳು",
     "navTestimonials": "ಅಭಿಪ್ರಾಯಗಳು",
     "navContact": "ಸಂಪರ್ಕ",
-    "heroTitle": "ನಿಮ್ಮ ಸಂಸ್ಥೆಯ<br><span class='grad-text'>ತಲುಪುವಿಕೆ, ನಂಬಿಕೆ &amp; ಬ್ರಾಂಡ್</span><br>ಡಿಜಿಟಲ್ ಸ್ಟ್ರಾಟೆಜಿಸ್ಟ್‌ನಿಂದ",
-    "heroDesc": "ನಾವು ಶಾಲೆ ಮತ್ತು ಕಾಲೇಜುಗಳಿಗೆ ಡಿಜಿಟಲ್ ಉಪಸ್ಥಿತಿ ಬೆಳೆಸಲು ಸಹಾಯ ಮಾಡುತ್ತೇವೆ — ಹೆಚ್ಚು ಪೋಷಕರು ನಿಮ್ಮನ್ನು ಕಂಡುಕೊಳ್ಳಲಿ, ನಂಬಲಿ ಮತ್ತು ಆಯ್ಕೆ ಮಾಡಲಿ.",
+    "heroTitle": "ನಿಮ್ಮ ಸಂಸ್ಥೆಯ<br><span class='grad-text'>ತಲುಪುವಿಕೆ, ನಂಬಿಕೆ &amp; ಬ್ರಾಂಡ್</span><br>ಡಿಜಿಟಲ್ ಸ್ಟ್ರಾಟೆಜಿಸ್ಟ್ನಿಂದ",
+    "heroDesc": "ನಾವು ಶಾಲೆ ಮತ್ತು ಕಾಲೇಜುಗಳಿಗೆ ಡಿಜಿಟಲ್ ಉಪಸ್ಥಿತಿ ಬೆಳೆಸಲು ಸಹಾಯ ಮಾಡುತ್ತೇವೆ. ಹೆಚ್ಚು ಪೋಷಕರು ನಿಮ್ಮನ್ನು ಕಂಡುಕೊಳ್ಳಲಿ, ನಂಬಲಿ ಮತ್ತು ಆಯ್ಕೆ ಮಾಡಲಿ.",
     "ctaMain": "ಉಚಿತ ಸಮಾಲೋಚನೆ ಬುಕ್ ಮಾಡಿ",
     "ctaSecondary": "ಸೇವೆಗಳು ನೋಡಿ",
     "stat1": "ವರ್ಷಗಳ ಸಾಂಪ್ರದಾಯಿಕ ಮಾಧ್ಯಮ ಅನುಭವ",
@@ -1535,22 +1429,22 @@
     "stat3": "ಡಿಜಿಟಲ್ ವಿಸಿಬಿಲಿಟಿ ಬೆಳವಣಿಗೆ",
     "svcLabel": "ನಾವು ಏನು ಮಾಡುತ್ತೇವೆ",
     "svcTitle": "<span class='grad-text'>ಶಿಕ್ಷಣ ಬೆಳವಣಿಗೆಗಾಗಿ</span> ನಮ್ಮ ಸೇವೆಗಳು",
-    "svcIntro": "ಶಾಲೆಗಳು ಅಡ್ಮಿಷನ್ ಸಮಯದಲ್ಲಿ ಎದುರಿಸುವ ಸವಾಲುಗಳನ್ನು ನಾವು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುತ್ತೇವೆ. ನಮ್ಮ ತಂತ್ರಗಳು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರಕ್ಕೆ ನಿರ್ದಿಷ್ಟವಾಗಿ ರೂಪಿಸಲ್ಪಟ್ಟಿವೆ.",
+    "svcIntro": "ಶಾಲೆಗಳು ಅಡ್ಮಿಷನ್ ಸಮಯದಲ್ಲಿ ಎದುರಿಸುವ ಸವಾಲುಗಳನ್ನು ನಾವು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುತ್ತೇವೆ.",
     "s1t": "ಗೂಗಲ್ ಮತ್ತು ಮೆಟಾ ಜಾಹೀರಾತು",
-    "s1d": "ಪೋಷಕರು ಶಾಲೆ ಹುಡುಕುವ ಸಮಯದಲ್ಲಿ ತಲುಪುವ ಉದ್ದೇಶಿತ ಜಾಹೀರಾತು ಅಭಿಯಾನಗಳು.",
+    "s1d": "ಪೋಷಕರು ಶಾಲೆ ಹುಡುಕುವ ಸಮಯದಲ್ಲಿ ತಲುಪುವ ಉದ್ದೇಶಿತ ಜಾಹೀರಾತು.",
     "s2t": "SEO ಮತ್ತು ಸ್ಥಳೀಯ ಹುಡುಕಾಟ",
     "s2d": "ಪೋಷಕರು ಶಾಲೆ ಹುಡುಕಿದಾಗ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಕಾಣಿಸಿ.",
     "s3t": "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ನಿರ್ವಹಣೆ",
     "s3d": "Instagram, Facebook ಮತ್ತು YouTube ಮೂಲಕ ನಿಮ್ಮ ಶಾಲೆಯ ಸಂಸ್ಕೃತಿ ತೋರಿಸಿ.",
-    "s4t": "ವೆಬ್‌ಸೈಟ್ ಮತ್ತು ಲ್ಯಾಂಡಿಂಗ್ ಪೇಜ್",
-    "s4d": "ಸುಂದರ, ವೇಗದ ವೆಬ್‌ಸೈಟ್ ಮತ್ತು ಅಡ್ಮಿಷನ್ ಲ್ಯಾಂಡಿಂಗ್ ಪೇಜ್.",
+    "s4t": "ವೆಬ್ಸೈಟ್ ಮತ್ತು ಲ್ಯಾಂಡಿಂಗ್ ಪೇಜ್",
+    "s4d": "ಸುಂದರ, ವೇಗದ ವೆಬ್ಸೈಟ್ ಮತ್ತು ಅಡ್ಮಿಷನ್ ಲ್ಯಾಂಡಿಂಗ್ ಪೇಜ್.",
     "s5t": "ಪ್ರತಿಷ್ಠೆ ನಿರ್ವಹಣೆ",
-    "s5d": "ಆನ್‌ಲೈನ್ ಸಮೀಕ್ಷೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ, ಹೆಚ್ಚು 5-ಸ್ಟಾರ್ ರೇಟಿಂಗ್ ಗಳಿಸಿ.",
+    "s5d": "ಆನ್ಲೈನ್ ಸಮೀಕ್ಷೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ, ಹೆಚ್ಚು 5-ಸ್ಟಾರ್ ರೇಟಿಂಗ್ ಗಳಿಸಿ.",
     "s6t": "ಅಡ್ಮಿಷನ್ ವಿಶ್ಲೇಷಣೆ",
     "s6d": "ಮಾಸಿಕ ವರದಿಗಳು ಪ್ರತಿ ರೂಪಾಯಿ ಏನು ಸಾಧಿಸಿದೆ ಎಂದು ತೋರಿಸುತ್ತವೆ.",
     "whyLabel": "ಏಕೆ ಸೌರುರಿಷಿ",
     "whyTitle": "ನಾವು ಶಿಕ್ಷಣದ <span class='grad-text'>ಭಾಷೆ ಮಾತನಾಡುತ್ತೇವೆ</span>",
-    "whyDesc": "ನಾವು 20 ವರ್ಷಗಳ ಸಾಂಪ್ರದಾಯಿಕ ಮಾಧ್ಯಮ — ಪ್ರಿಂಟ್, TV, ರೇಡಿಯೋ — ಮತ್ತು 2 ವರ್ಷಗಳ ಡಿಜಿಟಲ್ ವಿಶೇಷ ಅನುಭವ ತರುತ್ತೇವೆ.",
+    "whyDesc": "ನಾವು 20 ವರ್ಷಗಳ ಸಾಂಪ್ರದಾಯಿಕ ಮಾಧ್ಯಮ ಮತ್ತು 2 ವರ್ಷಗಳ ಡಿಜಿಟಲ್ ವಿಶೇಷ ಅನುಭವ ತರುತ್ತೇವೆ.",
     "ctaWhy": "ಈಗ WhatsApp ಮಾಡಿ",
     "wi1t": "ಶಿಕ್ಷಣ ಮಾತ್ರ ಗಮನ",
     "wi1d": "ನಾವು ಶಾಲೆ ಮತ್ತು ಕಾಲೇಜುಗಳೊಂದಿಗೆ ಮಾತ್ರ ಕೆಲಸ ಮಾಡುತ್ತೇವೆ.",
@@ -1560,17 +1454,17 @@
     "wi3d": "ಪ್ರತಿ ರೂಪಾಯಿ ಎಲ್ಲಿ ಹೋಯಿತು ಮತ್ತು ಯಾವ ಫಲಿತಾಂಶ ಸಿಕ್ಕಿತು ಎಂಬುದು ನಿಮಗೆ ಗೊತ್ತಿರುತ್ತದೆ.",
     "wi4t": "ಸೀಸನ್ ಸಿದ್ಧ ತಂತ್ರ",
     "wi4d": "ಅಡ್ಮಿಷನ್ ಋತು ಮೊದಲು 3 ತಿಂಗಳು ಯೋಜನೆ ಮಾಡುತ್ತೇವೆ.",
-    "whyDigitalLabel": "ನಾವು ಯಾಕೆ ಡಿಜಿಟಲ್‌ಗೆ ಹೋಗಬೇಕು",
-    "whyDigitalTitle": "ಪಾಲಕರು ನಮ್ಮ ಶಾಲೆಯ ಗೇಟ್‌ ಒಳಗಡೆ ಪ್ರವೇಶಿಸುವ <span class='grad-text'>ಮುನ್ನವೇ ನಿರ್ಧರಿಸಿರುತ್ತಾರೆ</span>",
-    "whyDigitalDesc": "2026 ರಲ್ಲಿ, ಪಾಲಕರ ಪ್ರಯಾಣ ನಿಮ್ಮ ರಿಸೆಪ್ಷನ್ ಡೆಸ್ಕ್‌ನಿಂದ ಪ್ರಾರಂಭವಾಗುವುದಿಲ್ಲ. ಅದು ಪ್ರಾರಂಭವಾಗುವುದು ಅವರ <strong>ಸ್ಮಾರ್ಟ್‌ಫೋನ್‌</strong>ನಲ್ಲಿ — ಮನೆಯಲ್ಲಿ, ರಾತ್ರಿ.",
+    "whyDigitalLabel": "ನಾವು ಯಾಕೆ ಡಿಜಿಟಲ್ಗೆ ಹೋಗಬೇಕು",
+    "whyDigitalTitle": "ಪಾಲಕರು ನಮ್ಮ ಶಾಲೆಯ ಗೇಟ್ ಒಳಗಡೆ ಪ್ರವೇಶಿಸುವ <span class='grad-text'>ಮುನ್ನವೇ ನಿರ್ಧರಿಸಿರುತ್ತಾರೆ</span>",
+    "whyDigitalDesc": "2026 ರಲ್ಲಿ, ಪಾಲಕರ ಪ್ರಯಾಣ ನಿಮ್ಮ ರಿಸೆಪ್ಷನ್ ಡೆಸ್ಕ್ನಿಂದ ಪ್ರಾರಂಭವಾಗುವುದಿಲ್ಲ. ಅದು ಪ್ರಾರಂಭವಾಗುವುದು ಅವರ <strong>ಸ್ಮಾರ್ಟ್ಫೋನ್</strong>ನಲ್ಲಿ.",
     "whyBannerTitle": "ನೀವು ಬ್ಯಾನರ್ಸ ಹಾಕಿರಬಹುದು.<br>ಆದರೆ ಪಾಲಕರು ನೋಡಬಹುದೆ?",
-    "whyBannerDesc": "ಪಾಲಕರು ದಿನಕ್ಕೆ ಸರಾಸರಿ 2-3 ಗಂಟೆ ಮೋಬೈಲ್‌ ಬಳಸುತ್ತಾರೆ. ನಾವು ಪಾಲಕರು ನಮ್ಮನ್ನು ನೋಡಲು ಕಾಯುವುದಿಲ್ಲ. <strong>ಅವರ ದಿನಚರಿಗೆ ತೊಂದರೆಯಾಗದಂತೆ ಮೌಲ್ಯಯುತ ವಿಷಯಗಳಿಂದ ತಲುಪುತ್ತೇವೆ.</strong>",
+    "whyBannerDesc": "ಪಾಲಕರು ದಿನಕ್ಕೆ ಸರಾಸರಿ 2-3 ಗಂಟೆ ಮೋಬೈಲ್ ಬಳಸುತ್ತಾರೆ. ನಾವು ಪಾಲಕರು ನಮ್ಮನ್ನು ನೋಡಲು ಕಾಯುವುದಿಲ್ಲ. <strong>ಅವರ ದಿನಚರಿಗೆ ತೊಂದರೆಯಾಗದಂತೆ ಮೌಲ್ಯಯುತ ವಿಷಯಗಳಿಂದ ತಲುಪುತ್ತೇವೆ.</strong>",
     "whyTradLabel": "ಸಾಂಪ್ರದಾಯಿಕ ಬ್ಯಾನರ್",
     "whyTradText": "ಜನರು ಮೋಬೈಲ್ ನೋಡುತ್ತಾ ಹಾದುಹೋಗುತ್ತಾರೆ",
     "whyDigLabel": "ಡಿಜಿಟಲ್ ಕಂಟೆಂಟ್",
-    "whyDigText": "ಅವರು ಈಗಾಗಲೇ ನೋಡುತ್ತಿರುವ ಫೋನ್‌ನಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತೇವೆ",
-    "whyCard1Title": "ನಿಮ್ಮ ಸೊಶಿಯಲ್‌ ಮೀಡಿಯಾ ಪೇಜ್‌<br>ನಿಮ್ಮ 24/7 ಡಿಜಿಟಲ್ ರಿಸೆಪ್ಶನಿಸ್ಟ್",
-    "whyCard1Desc": "ನಿಮ್ಮ ಪೇಜ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದ್ದರೆ, ಡಿಜಿಟಲ್ ಪಾಲಕರ ಕಣ್ಣಿನಲ್ಲಿ ನೀವು <strong>ಮುಚ್ಚಿದ</strong> ಸಂಸ್ಥೆ — ಶಾಲೆ ತೆರೆದಿದ್ದರೂ ಸಹ.",
+    "whyDigText": "ಅವರು ಈಗಾಗಲೇ ನೋಡುತ್ತಿರುವ ಫೋನ್ನಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತೇವೆ",
+    "whyCard1Title": "ನಿಮ್ಮ ಸೊಶಿಯಲ್ ಮೀಡಿಯಾ ಪೇಜ್<br>ನಿಮ್ಮ 24/7 ಡಿಜಿಟಲ್ ರಿಸೆಪ್ಶನಿಸ್ಟ್",
+    "whyCard1Desc": "ನಿಮ್ಮ ಪೇಜ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದ್ದರೆ, ಡಿಜಿಟಲ್ ಪಾಲಕರ ಕಣ್ಣಿನಲ್ಲಿ ನೀವು <strong>ಮುಚ್ಚಿದ</strong> ಸಂಸ್ಥೆ.",
     "whyCard2Title": "ಪಾರದರ್ಶಕತೆಯೇ<br>ಹೊಸ ಮಾರ್ಕೆಟಿಂಗ್",
     "whyCard2Desc": "ಪಾಲಕರಿಗೆ <strong>ಕಾಳಜಿಯ ಸಾಕ್ಷಿ</strong> ಬೇಕು. ನಿಯಮಿತ ಕಂಟೆಂಟ್ ಪಾಲಕರ ಆತಂಕ ಕಡಿಮೆ ಮಾಡಿ ಆಳವಾದ ನಂಬಿಕೆ ನಿರ್ಮಿಸುತ್ತದೆ.",
     "whyCard3Title": "ಸರಿಯಾದ ಪಾಲಕರನ್ನ<br>ಸರಿಯಾದ ಸಮಯಕ್ಕೆ ಮುಟ್ಟಬಹುದು",
@@ -1584,22 +1478,22 @@
     "whyAmp2Desc": "ಸ್ಮಾರ್ಟ್ ಯೋಜನೆ, ಕನ್ನಡ ಮೊದಲ ಕಥೆ ಮತ್ತು ಭಾವನಾತ್ಮಕ ಸಂಪರ್ಕ.",
     "whyAmp3Title": "ವಿಶ್ವದರ್ಜೆಯ ಕಂಟೆಂಟ್",
     "whyAmp3Desc": "ನಿಮ್ಮ ದೈನಂದಿನ ಚಟುವಟಿಕೆಗಳು ವೃತ್ತಿಪರ, ಶೇರ್ ಯೋಗ್ಯ ರೀತಿಯಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
-    "whyVTVTitle": "ನಾವು ಸೇವೆ ಮಾರಾಟ ಮಾಡುವುದಿಲ್ಲ.<br><span class='grad-text'>ಪಾಲಕರಲ್ಲಿ ನಿಮ್ಮ ಬಗ್ಗೆ ನಂಬಿಕೆಯ<br>ವಾತಾವರಣ ನಿರ್ಮಿಸುತ್ತೇವೆ.</span>",
-    "whyVTVDesc": "ಪಾಲಕರು ನಿಮ್ಮ ಶಾಲೆಯ ದೈನಂದಿನ ಜೀವನವನ್ನು ನಿರಂತರವಾಗಿ ನೋಡಿದಾಗ — ನಂಬಿಕೆ ಬರುತ್ತದೆ. ನಿಮ್ಮ ಸಂಸ್ಥೆ ಸಮುದಾಯದ <strong>ಮೊದಲ ಆಯ್ಕೆ</strong> ಆಗುತ್ತದೆ.",
-    "whyRet": "ಉಳಿಕೆ — ಇರುವ ಪಾಲಕರು ಹೆಮ್ಮೆ ಪಡುತ್ತಾರೆ ಮತ್ತು ಶೇರ್ ಮಾಡುತ್ತಾರೆ",
-    "whyRef": "ರೆಫರಲ್ — WhatsApp ಗುಂಪುಗಳಲ್ಲಿ ನಿಮ್ಮ ಕಥೆ ಹರಡುತ್ತದೆ",
-    "whyAuth": "ಅಧಿಕಾರ — ನಿಮ್ಮ ಸಂಸ್ಥೆ ಪ್ರದೇಶದಲ್ಲಿ ಮೊದಲ ಆಯ್ಕೆ ಆಗುತ್ತದೆ",
+    "whyVTVTitle": "ನಾವು ಸೇವೆ ಮಾರಾಟ ಮಾಡುವುದಿಲ್ಲ.<br><span class='grad-text'>ಪಾಲಕರಲ್ಲಿ ನಿಮ್ಮ ಬಗ್ಗೆ ನಂಬಿಕೆಯ ವಾತಾವರಣ ನಿರ್ಮಿಸುತ್ತೇವೆ.</span>",
+    "whyVTVDesc": "ಪಾಲಕರು ನಿಮ್ಮ ಶಾಲೆಯ ದೈನಂದಿನ ಜೀವನವನ್ನು ನಿರಂತರವಾಗಿ ನೋಡಿದಾಗ ನಂಬಿಕೆ ಬರುತ್ತದೆ. ನಿಮ್ಮ ಸಂಸ್ಥೆ ಸಮುದಾಯದ <strong>ಮೊದಲ ಆಯ್ಕೆ</strong> ಆಗುತ್ತದೆ.",
+    "whyRet": "ಉಳಿಕೆ - ಇರುವ ಪಾಲಕರು ಹೆಮ್ಮೆ ಪಡುತ್ತಾರೆ ಮತ್ತು ಶೇರ್ ಮಾಡುತ್ತಾರೆ",
+    "whyRef": "ರೆಫರಲ್ - WhatsApp ಗುಂಪುಗಳಲ್ಲಿ ನಿಮ್ಮ ಕಥೆ ಹರಡುತ್ತದೆ",
+    "whyAuth": "ಅಧಿಕಾರ - ನಿಮ್ಮ ಸಂಸ್ಥೆ ಪ್ರದೇಶದಲ್ಲಿ ಮೊದಲ ಆಯ್ಕೆ ಆಗುತ್ತದೆ",
     "whyCycleLabel": "ಬೆಳವಣಿಗೆಯ ಚಕ್ರ",
     "whyTagline": "ಶಿಕ್ಷಣ ನಿಮ್ಮದು, ತಲುಪಿಸುವ ಜವಾಬ್ದಾರಿ ನಮ್ಮದು.",
-    "testLabel": "ನಮ್ಮ ಕ್ಲೈಂಟ್‌ಗಳು ಹೇಳುವುದು",
+    "testLabel": "ನಮ್ಮ ಕ್ಲೈಂಟ್ಗಳು ಹೇಳುವುದು",
     "testTitle": "ನಮ್ಮೊಂದಿಗೆ <span class='grad-text'>ಬೆಳೆದ ಸಂಸ್ಥೆಗಳು</span>",
-    "test1Quote": "ಸೌರುರಿಷಿ ಆನ್‌ಲೈನ್ ಗ್ರೋಥ್‌ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ ನಂತರ, ಸಮುದಾಯದಲ್ಲಿ ನಮ್ಮ ಶಾಲೆಯ ಗೋಚರತೆ ಸಂಪೂರ್ಣವಾಗಿ ಬದಲಾಗಿದೆ.",
+    "test1Quote": "ಸೌರುರಿಷಿ ಆನ್ಲೈನ್ ಗ್ರೋಥ್ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ ನಂತರ, ಸಮುದಾಯದಲ್ಲಿ ನಮ್ಮ ಶಾಲೆಯ ಗೋಚರತೆ ಸಂಪೂರ್ಣವಾಗಿ ಬದಲಾಗಿದೆ.",
     "test1Name": "ಪ್ರಾಂಶುಪಾಲರು",
     "test1Inst": "ಕೇಂಬ್ರಿಡ್ಜ್ ಶಾಲೆ, ಲಿಂಗಸುಗೂರು",
     "test2Quote": "ಸೌರುರಿಷಿ ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರವನ್ನು ಆಳವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುತ್ತಾರೆ. ಅವರ ಕನ್ನಡ ಮೊದಲ ಕಂಟೆಂಟ್ ಸ್ಥಳೀಯ ಪಾಲಕರೊಂದಿಗೆ ಭಾವನಾತ್ಮಕ ಸಂಪರ್ಕ ಬೆಳೆಸಿತು.",
     "test2Name": "ಕಾಲೇಜು ನಿರ್ವಹಣೆ",
     "test2Inst": "ಸರ್ ಎಂ.ವಿ ಪಿಯು ಕಾಲೇಜು, ಲಿಂಗಸುಗೂರು",
-    "clientsLabel": "ನಮ್ಮ ಕ್ಲೈಂಟ್‌ಗಳು",
+    "clientsLabel": "ನಮ್ಮ ಕ್ಲೈಂಟ್ಗಳು",
     "clientsTitle": "ನಮ್ಮನ್ನು <span class='grad-text'>ನಂಬಿದ ಸಂಸ್ಥೆಗಳು</span>",
     "clientsDesc": "ಅವರ ಪೇಜ್ ಭೇಟಿ ಮಾಡಿ ಮತ್ತು ಕೆಲಸ ನೋಡಿ.",
     "contactLabel": "ಸಂಪರ್ಕಿಸಿ",
@@ -1610,6 +1504,146 @@
     "lPhone": "ಫೋನ್ ಸಂಖ್ಯೆ",
     "lSchool": "ಶಾಲೆ / ಸಂಸ್ಥೆ ಹೆಸರು",
     "lType": "ಸಂಸ್ಥೆ ವಿಧ",
-    "lBudget": "ಮಾಸಿಕ ಬಜೆಟ್ (₹)",
+    "lBudget": "ಮಾಸಿಕ ಬಜೆಟ್ (ರೂ)",
     "lMsg": "ನಿಮ್ಮ ಸಮಸ್ಯೆ ಹೇಳಿ",
-    "formSubmit": "ಉಚಿತ ಆಡಿಟ್ ವಿನಂತಿ ಕಳ
+    "formSubmit": "ಉಚಿತ ಆಡಿಟ್ ವಿನಂತಿ ಕಳುಹಿಸಿ",
+    "formNote": "ನಾವು 24 ಗಂಟೆಗಳಲ್ಲಿ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೇವೆ.",
+    "successTitle": "ವಿನಂತಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ!",
+    "successDesc": "ನಮ್ಮ ತಂಡ 24 ಗಂಟೆಗಳಲ್ಲಿ ಕರೆ ಮಾಡುತ್ತದೆ."
+  }
+}
+</script>
+
+<script>
+    let toggleLanguage;
+    let lang = 'en';
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const t = JSON.parse(document.getElementById('translations-data').textContent);
+
+        function setText(id, val) {
+            const el = document.getElementById(id);
+            if (el) el.innerHTML = val;
+        }
+
+        toggleLanguage = function() {
+            lang = lang === 'en' ? 'kn' : 'en';
+            const d = t[lang];
+            setText('lang-btn', d.langBtn);
+            setText('nav-services', d.navServices);
+            setText('nav-why', d.navWhy);
+            setText('nav-clients', d.navClients);
+            setText('nav-testimonials', d.navTestimonials);
+            setText('nav-contact', d.navContact);
+            setText('hero-title', d.heroTitle);
+            setText('hero-desc', d.heroDesc);
+            setText('cta-main-text', d.ctaMain);
+            setText('cta-secondary', d.ctaSecondary);
+            setText('stat-1', d.stat1);
+            setText('stat-2', d.stat2);
+            setText('stat-3', d.stat3);
+            setText('svc-label', d.svcLabel);
+            setText('svc-title', d.svcTitle);
+            setText('svc-intro', d.svcIntro);
+            setText('s1-title', d.s1t); setText('s1-desc', d.s1d);
+            setText('s2-title', d.s2t); setText('s2-desc', d.s2d);
+            setText('s3-title', d.s3t); setText('s3-desc', d.s3d);
+            setText('s4-title', d.s4t); setText('s4-desc', d.s4d);
+            setText('s5-title', d.s5t); setText('s5-desc', d.s5d);
+            setText('s6-title', d.s6t); setText('s6-desc', d.s6d);
+            setText('why-label', d.whyLabel);
+            setText('why-title', d.whyTitle);
+            setText('why-desc', d.whyDesc);
+            setText('cta-why', d.ctaWhy);
+            setText('wi1-title', d.wi1t); setText('wi1-desc', d.wi1d);
+            setText('wi2-title', d.wi2t); setText('wi2-desc', d.wi2d);
+            setText('wi3-title', d.wi3t); setText('wi3-desc', d.wi3d);
+            setText('wi4-title', d.wi4t); setText('wi4-desc', d.wi4d);
+            setText('why-digital-label', d.whyDigitalLabel);
+            setText('why-digital-title', d.whyDigitalTitle);
+            setText('why-digital-desc', d.whyDigitalDesc);
+            setText('why-banner-title', d.whyBannerTitle);
+            setText('why-banner-desc', d.whyBannerDesc);
+            setText('why-trad-label', d.whyTradLabel);
+            setText('why-trad-text', d.whyTradText);
+            setText('why-dig-label', d.whyDigLabel);
+            setText('why-dig-text', d.whyDigText);
+            setText('why-card1-title', d.whyCard1Title);
+            setText('why-card1-desc', d.whyCard1Desc);
+            setText('why-card2-title', d.whyCard2Title);
+            setText('why-card2-desc', d.whyCard2Desc);
+            setText('why-card3-title', d.whyCard3Title);
+            setText('why-card3-desc', d.whyCard3Desc);
+            setText('why-amp-label', d.whyAmpLabel);
+            setText('why-amp-title', d.whyAmpTitle);
+            setText('why-amp-desc', d.whyAmpDesc);
+            setText('why-amp1-title', d.whyAmp1Title); setText('why-amp1-desc', d.whyAmp1Desc);
+            setText('why-amp2-title', d.whyAmp2Title); setText('why-amp2-desc', d.whyAmp2Desc);
+            setText('why-amp3-title', d.whyAmp3Title); setText('why-amp3-desc', d.whyAmp3Desc);
+            setText('why-vtv-title', d.whyVTVTitle);
+            setText('why-vtv-desc', d.whyVTVDesc);
+            setText('why-ret', d.whyRet);
+            setText('why-ref', d.whyRef);
+            setText('why-auth', d.whyAuth);
+            setText('why-cycle-label', d.whyCycleLabel);
+            setText('why-tagline', d.whyTagline);
+            setText('test-label', d.testLabel);
+            setText('test-title', d.testTitle);
+            setText('test-1-quote', d.test1Quote);
+            setText('test-1-name', d.test1Name);
+            setText('test-1-inst', d.test1Inst);
+            setText('test-2-quote', d.test2Quote);
+            setText('test-2-name', d.test2Name);
+            setText('test-2-inst', d.test2Inst);
+            setText('clients-label', d.clientsLabel);
+            setText('clients-title', d.clientsTitle);
+            setText('clients-desc', d.clientsDesc);
+            setText('contact-label', d.contactLabel);
+            setText('contact-title', d.contactTitle);
+            setText('contact-desc', d.contactDesc);
+            setText('form-title', d.formTitle);
+            setText('label-name', d.lName);
+            setText('label-phone', d.lPhone);
+            setText('label-school', d.lSchool);
+            setText('label-type', d.lType);
+            setText('label-budget', d.lBudget);
+            setText('label-msg', d.lMsg);
+            setText('form-submit', d.formSubmit);
+            setText('form-note', d.formNote);
+        };
+
+        /* Scroll reveal */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(r => observer.observe(r));
+
+        /* Form submit */
+        const form = document.getElementById('inquiry-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('f-name').value;
+                const phone = document.getElementById('f-phone').value;
+                const school = document.getElementById('f-school').value;
+                const type = document.getElementById('f-type').value;
+                const budget = document.getElementById('f-budget').value;
+                const msg = document.getElementById('f-msg').value;
+                const text = encodeURIComponent(
+                    "New Inquiry from Soururishi Website\n\n" +
+                    "Name: " + name + "\nPhone: " + phone +
+                    "\nSchool: " + school + "\nType: " + type +
+                    "\nBudget: " + budget + "\nMessage: " + msg
+                );
+                window.open('https://wa.me/919900454100?text=' + text, '_blank');
+                document.getElementById('form-success').style.display = 'block';
+                form.style.display = 'none';
+            });
+        }
+
+    });
+</script>
+
+</body>
+</html>
